@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人作品集 | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="logo" href="#home" aria-label="回到首页">Portfolio</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        <span class="sr-only">打开导航菜单</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">自我介绍</a></li>
+        <li><a href="#projects">作品展示</a></li>
+        <li><a href="#contact">联系我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">你好，欢迎来到我的个人网站</p>
+        <h1>用清晰的设计与可靠的代码，打造令人愉悦的数字体验。</h1>
+        <p class="hero-text">我是一名关注细节的前端学习者/开发者，热爱把想法转化为简洁、现代且易用的网页作品。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">查看作品</a>
+          <a class="button secondary" href="#contact">联系我</a>
+        </div>
+      </div>
+      <div class="hero-card reveal" aria-label="个人亮点">
+        <div class="avatar">Hi</div>
+        <h2>持续学习 · 注重体验</h2>
+        <p>HTML / CSS / JavaScript</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>自我介绍</h2>
+      </div>
+      <div class="about-grid reveal">
+        <p>我喜欢构建结构清晰、视觉舒适的网页，重视响应式布局、可访问性和交互细节。无论是个人主页、产品落地页还是小型 Web 应用，我都希望让用户快速理解内容并顺畅完成操作。</p>
+        <ul class="skills" aria-label="技能列表">
+          <li>语义化 HTML</li>
+          <li>现代 CSS 布局</li>
+          <li>原生 JavaScript 交互</li>
+          <li>响应式设计</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>作品展示</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <span class="project-tag">Web Design</span>
+          <h3>品牌落地页</h3>
+          <p>为新产品设计的单页网站，突出核心卖点、行动按钮和移动端阅读体验。</p>
+        </article>
+        <article class="project-card reveal">
+          <span class="project-tag">JavaScript</span>
+          <h3>任务管理工具</h3>
+          <p>使用原生 JavaScript 实现任务新增、完成状态切换与本地数据保存。</p>
+        </article>
+        <article class="project-card reveal">
+          <span class="project-tag">UI Practice</span>
+          <h3>作品集模板</h3>
+          <p>简洁现代的个人展示模板，包含网格布局、卡片组件和滚动动效。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>联系我</h2>
+        <p>如果你想交流项目、合作机会或只是打个招呼，欢迎发送邮件给我。</p>
+        <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Portfolio. 保持创造，持续进步。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
